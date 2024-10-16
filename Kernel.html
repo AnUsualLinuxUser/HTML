@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kernel di Linux - Matrix Style</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #00ff00; 
+            overflow: hidden;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8); 
+            color: #00ff00;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00ff00;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #00ff00;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00; 
+            transform: scale(1.1); 
+        }
+
+        main {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.9); 
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            max-width: 800px;
+            margin: 20px auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #00ff00; 
+            text-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+        }
+
+        h2 {
+            color: #ffcc00; 
+            text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #00ff00; 
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #00ff00;
+        }
+
+        @keyframes rain {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
+        .matrix {
+            position: absolute;
+            top: -50%;
+            left: 0;
+            right: 0;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .matrix div {
+            position: absolute;
+            bottom: 100%;
+            color: #00ff00;
+            font-size: 20px;
+            white-space: nowrap;
+            opacity: 0.8;
+            animation: rain linear infinite;
+            animation-duration: 2s;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .resources {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="matrix">
+        <div style="left: 10%; animation-delay: 0s;">MATRIX </div>
+        <div style="left: 20%; animation-delay: 0.5s;">CODE </div>
+        <div style="left: 30%; animation-delay: 1s;">NODES </div>
+        <div style="left: 40%; animation-delay: 1.5s;">SYSTEM </div>
+        <div style="left: 50%; animation-delay: 2s;">FUNCTIONS </div>
+        <div style="left: 60%; animation-delay: 2.5s;">PROCESSING </div>
+        <div style="left: 70%; animation-delay: 3s;">REBOOT </div>
+        <div style="left: 80%; animation-delay: 3.5s;">INITIATE </div>
+        <div style="left: 90%; animation-delay: 4s;">SECURITY </div>
+    </div>
+
+    <header>
+        <h1>Il Kernel di Linux</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="download.html">Guida all'Installazione</a></li>
+                <li><a href="who.html">Chi Siamo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cosa è il Kernel?</h2>
+            <p>Il kernel è il cuore del sistema operativo Linux. Gestisce le risorse hardware del computer e fornisce servizi essenziali per i programmi in esecuzione.</p>
+        </section>
+
+        <section>
+            <h2>Funzioni Principali del Kernel</h2>
+            <ul>
+                <li><strong>Gestione della Memoria:</strong> Controlla l'allocazione e la liberazione della memoria.</li>
+                <li><strong>Gestione dei Processi:</strong> Coordina l'esecuzione dei processi e gestisce il multitasking.</li>
+                <li><strong>Gestione dei Dispositivi:</strong> Fornisce interfacce per la comunicazione con le periferiche hardware.</li>
+                <li><strong>Sicurezza:</strong> Implementa meccanismi di sicurezza per proteggere il sistema.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tipi di Kernel</h2>
+            <p>Esistono diversi tipi di kernel, tra cui:</p>
+            <ul>
+                <li><strong>Monolitico:</strong> Tutti i servizi di sistema sono gestiti in un'unica area di memoria.</li>
+                <li><strong>Microkernel:</strong> Solo i servizi di base sono inclusi, mentre gli altri funzionano in spazio utente.</li>
+                <li><strong>Kernel Ibrido:</strong> Combina elementi dei kernel monolitici e microkernel.</li>
+            </ul>
+        </section>
+
+        <section class="image-container">
+            <h2>Architettura del Kernel</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Linux_kernel_diagram.svg/1024px-Linux_kernel_diagram.svg.png" alt="Architettura del Kernel" width="600">
+            <p>Questo diagramma mostra l'architettura del kernel di Linux.</p>
+        </section>
+
+        <section>
+            <h2>Risorse Utili</h2>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://www.kernel.org/" style="color: #00ff00;">Sito Ufficiale del Kernel</a></li>
+                    <li><a href="https://www.linux.com/" style="color: #00ff00;">Linux.com</a></li>
+                    <li><a href="https://www.tldp.org/" style="color: #00ff00;">The Linux Documentation Project</a></li>
+                    <li><a href="https://www.freecodecamp.org/news/linux-kernel-tutorial-for-beginners/" style="color: #00ff00;">Guida per Principianti al Kernel di Linux</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Conclusione</h2>
+            <p>Il kernel di Linux è un componente fondamentale che garantisce il corretto funzionamento del sistema operativo. La sua architettura e design influiscono sulle prestazioni e sulla stabilità del sistema.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Debian Project</p>
+    </footer>
+</body>
+</html>
+
