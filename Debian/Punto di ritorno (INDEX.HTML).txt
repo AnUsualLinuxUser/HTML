@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debian</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Benvenuto su Debian</h1>
+        <img src="Logo.png" class="logo">
+        <nav>
+            <ul>
+                <li><a href="file:///home/liam/Scrivania/Debian/download.html">Download</a></li>
+                <li><a href="file:///home/liam/Scrivania/Debian/who.html">Chi siamo</a></li>
+                <li><a href="file:///home/liam/Scrivania/Debian/Kernel.html">KERNEL</a></li>
+                <li><a href="file:///home/liam/Scrivania/Debian/Documentazione.html">Patch</a></li>
+                <li><a href="file:///home/liam/Scrivania/Debian/history.html">Storia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cos'è Debian?</h2>
+            <p>Debian è un sistema operativo libero e open source basato su GNU/Linux, sviluppato da una comunità di volontari. È noto per la sua stabilità, sicurezza e ampia gamma di pacchetti software.</p>
+        </section>
+        
+        <section>
+          <h2>Una immagine del Desktop di Linux Debian:</h2>
+          <img src="Schermata del 2024-10-01 16-24-34.png" class="feature-image">
+        </section>
+          
+        <section>
+            <h2>Ultimi aggiornamenti di Debian 12</h2>
+            <ul>
+                <li><strong>Data: 30 Settembre 2024</strong> - Rilasciata la versione di sicurezza per il kernel di Debian 12.</li>
+                <li><strong>Data: 20 Settembre 2024</strong> - Aggiornamento dei pacchetti di base, inclusi vim e gcc.</li>
+                <li><strong>Data: 10 Settembre 2024</strong> - Fix per problemi di compatibilità con le schede grafiche NVIDIA.</li>
+                <li><strong>Data: 01 Settembre 2024</strong> - Aggiornamenti per la documentazione di Debian.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Punti di forza di Debian</h2>
+            <p>Perché dovresti considerare di installare Debian:</p>
+            <ul>
+                <li><strong>Stabilità:</strong> Debian è noto per la sua stabilità e affidabilità.</li>
+                <li><strong>Comunità attiva:</strong> Supportato da una vasta comunità di sviluppatori.</li>
+                <li><strong>Pacchetti abbondanti:</strong> Vasta gamma di software disponibili.</li>
+                <li><strong>Flessibilità:</strong> Utilizzabile in diverse configurazioni.</li>
+                <li><strong>Supporto a lungo termine:</strong> Aggiornamenti di sicurezza per diversi anni.</li>
+                <li><strong>Rispetto della libertà software:</strong> Sistema operativo etico e open source.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ulteriori informazioni</h2>
+            <p>Se desideri approfondire, ecco alcune risorse utili:</p>
+            <ul>
+                <li><a href="https://www.debian.org/doc/manuals/debian-faq/" target="_blank">FAQ di Debian</a></li>
+                <li><a href="https://www.debian.org/releases/" target="_blank">Guida all'installazione</a></li>
+                <li><a href="https://wiki.debian.org/" target="_blank">Wiki di Debian</a></li>
+                <li><a href="https://www.debian.org/security/" target="_blank">Informazioni sulla sicurezza</a></li>
+            </ul>
+            <p>Per qualsiasi domanda, visita il nostro <a href="https://www.debian.org/support" target="_blank">sito di supporto</a>.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Debian Project</p>
+        </footer>
+    </main>
+</body>
+</html>
+
+
